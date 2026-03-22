@@ -14,7 +14,7 @@ export default function IzinUcreti({ sonuc, formData }) {
       </div>
       <div ref={exportRef} className="bg-white rounded-xl shadow-sm border p-6">
         <div className="flex items-start mb-6">
-          <img src="/sirket_logo.png" alt="Şirket Logo" width="110" height="71" className="mr-4" />
+          <img src={`${import.meta.env.BASE_URL}sirket_logo.png`} alt="Şirket Logo" width="110" height="71" className="mr-4" />
           <div className="flex-1 text-center">
             <h3 className="text-lg font-bold">YILLIK İZİN ÜCRETİ BORDROSU</h3>
             <p className="text-sm text-gray-500">{formData.sirketAdi} - {formData.isyeriAdiUnvani}</p>

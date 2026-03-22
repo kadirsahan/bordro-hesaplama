@@ -11,7 +11,7 @@ export default function CalismaBelgesi({ formData }) {
       </div>
       <div ref={exportRef} className="bg-white rounded-xl shadow-sm border p-8 max-w-3xl mx-auto" style={{ fontFamily: 'serif' }}>
         <div className="flex items-start mb-6">
-          <img src="/sirket_logo.png" alt="Şirket Logo" width="110" height="71" />
+          <img src={`${import.meta.env.BASE_URL}sirket_logo.png`} alt="Şirket Logo" width="110" height="71" />
         </div>
         <div className="flex justify-between mb-8 text-sm">
           <div><p><span className="font-medium">Tarih:</span> {formatTarih(formData.istenCikisTarihi)}</p></div>
