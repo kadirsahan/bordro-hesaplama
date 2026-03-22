@@ -1,0 +1,7 @@
+services:
+  bordro-app:
+    build: .
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+    container_name: bordro-hesaplama
